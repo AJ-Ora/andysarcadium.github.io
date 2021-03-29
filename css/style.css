@@ -1,14 +1,7 @@
-.side-panel {
-    width: 300px;
-    flex-shrink: 0;
-    text-align: center;
-    padding-top: 24px;
-    overflow-y: auto;
-}
-
 .icon-container {
     position: relative;
     display: inline-flex;
+    width: 100%;
 }
 
 .icon-container:after {
@@ -29,19 +22,6 @@
     width: 100%;
     display: flex;
     justify-content: center;
-}
-
-.side-panel > nav {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 24px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    border-top: 1px solid #000000;
-    margin-bottom: 16px;
-    border-bottom: 1px solid #000000;
 }
 
 .expandable-activator {
@@ -76,4 +56,99 @@ a {
     transition: background-color 0.2s ease-in;
     color: #000000;
     text-decoration: none;
+}
+
+.blurred-background {
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.blurred-background > * {
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+}
+
+td:last-child {
+    padding-left: 8px;
+}
+
+.flex-small-left-panel {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.flex-small-left-panel > div:first-child {
+    flex-shrink: 0;
+    text-align: center;
+    overflow-y: auto;
+    background-color: #FFFFFF;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-right: 1px solid #000000;
+}
+
+.flex-small-left-panel > div:last-child {
+    flex-grow: 1;
+}
+
+.flex-footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.flex-footer > div:first-child {
+    flex-grow: 1;
+}
+
+.flex-footer > div:last-child {
+    flex-shrink: 0;
+    text-align: left;
+    background-color: #FFFFFF;
+    padding-left: 8px;
+    border-top: 1px solid #000000;
+    display: inline-flex;
+    align-items: center;
+    border-bottom-right-radius: 16px;
+}
+
+.flex-footer > div:last-child > * {
+    font-size: 24px;
+    margin: 4px 8px 4px 0px;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 24px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-top: 1px solid #000000;
+    margin-bottom: 16px;
+    border-bottom: 1px solid #000000;
+}
+
+.table-with-icons {
+}
+
+.table-with-icons > tbody > tr > td:first-child {
+    width: 32px;
+}
+
+.rounding-right-side {
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+
+.rounding-left-side {
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+}
+
+.drop-shadow {
+    box-shadow: 0px 0px 10px 0px #000000;
 }

@@ -10,9 +10,9 @@
         <link href="css/style.css" rel="stylesheet">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand&display=swap">
     </head>
-    <body style="background-color: #ffffff; font-family: 'Quicksand', sans-serif; margin: 0px; overflow-y: hidden; height: 100vh; color: #000000;" class="background-blurred">
-        <div style="display: flex; flex-direction: row; height: 100%;" data-pg-name="Flex Container">
-            <div class="side-panel" data-pg-name="Side Panel">
+    <body style="background-color: #ffffff; font-family: 'Quicksand', sans-serif; margin: 0px; overflow-y: hidden; height: 100vh; color: #000000;">
+        <div data-pg-name="Flex Container" class="blurred-background flex-small-left-panel" style="background-image: url('images/portfolio/OulankaNationalPark.webp');">
+            <div data-pg-name="Side Panel" style="padding-top: 24px;" class="drop-shadow">
                 <div class="icon-centered">
                     <div class="icon-container" style="width: 80%;">
                         <img src="images/portfolio/portrait-photo.png" style="border: 2px solid #000000;"/>
@@ -20,14 +20,36 @@
                 </div>
                 <h1>Portfolio</h1>
                 <h2>Antti-Jussi Oravainen</h2>
-                <nav>
-                    <label for="window-about-me">About me</label>
-                    <label for="window-skills">Skills</label>
-                    <label>Games</label>
-                    <label>Projects</label>
+                <nav data-pg-name="Pages">
+                    <table>
+                        <tr>
+                            <td><i class="fas fa-user"></i></td>
+                            <td>
+                                <label for="window-about-me">About me</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><i class="fas fa-star"></i></td>
+                            <td>
+                                <label for="window-skills">Skills</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><i class="fas fa-gamepad"></i></td>
+                            <td>
+                                <label for="window-games">Games</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><i class="fas fa-file-code"></i></td>
+                            <td>
+                                <label for="window-projects">Projects</label>
+                            </td>
+                        </tr>
+                    </table>
                 </nav>
-                <nav>
-                    <table style="text-align: left;">
+                <nav data-pg-name="Social media">
+                    <table>
                         <tr>
                             <td><i class="fab fa-linkedin-in"></i></td>
                             <td><a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/antti-jussi-o/">LinkedIn</a></td>
@@ -47,11 +69,111 @@
                     </table>
                 </nav>
             </div>
-            <div style="flex-grow: 1;" data-pg-name="Main Panel">
+            <div data-pg-name="Main Panel">
                 <input type="radio" name="window-selection" checked="checked" id="window-about-me" class="expandable-activator"/>
-                <div class="background-blurred expandable-window" style="background-image: url('images/portfolio/pueo-adventure.jpg');"></div>
+                <div class="expandable-window">
+                    <div style="background-color: #ffffff; width: 76%; height: 80%; align-self: center; margin-left: 10%; padding-left: 2%; padding-right: 2%; border-radius: 16px;">
+                        <h1>About me</h1>
+                        <p>I am a programmer.</p>
+                    </div>
+                </div>
                 <input type="radio" name="window-selection" id="window-skills" class="expandable-activator"/>
-                <div class="background-blurred expandable-window" style="background-image: url('images/portfolio/timedilation.jpg');"></div>
+                <div class="expandable-window">
+                    <div style="background-color: #ffffff; width: 80%; height: 80%; align-self: center; margin-left: 10%; border-radius: 16px;" class="flex-small-left-panel">
+</div>
+                </div>
+                <input type="radio" name="window-selection" id="window-games" class="expandable-activator"/>
+                <div class="expandable-window">
+                    <div style="width: 90%; height: 90%; align-self: center; margin-left: 5%; border-radius: 16px;" class="drop-shadow flex-small-left-panel">
+                        <div data-pg-name="Games Side Panel" class="rounding-left-side">
+                            <h1>Games</h1>
+                            <p>(Sorted by most recent games first!)</p>
+                            <nav data-pg-name="Games">
+                                <table class="table-with-icons">
+                                    <tr>
+                                        <td>
+                                            <div class="icon-centered">
+                                                <div class="icon-container">
+                                                    <img src="images/portfolio/power-mage-logo.png"/>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <label for="game-power-mage">Power Mage</label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="icon-centered">
+                                                <div class="icon-container">
+                                                    <img src="images/portfolio/timedilation-logo.jpg"/>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <label for="game-time">T.I.M.E.</label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="icon-centered">
+                                                <div class="icon-container">
+                                                    <img src="images/portfolio/raised-by-you-logo.jpg"/>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <label for="game-raised-by-you">Raised By You</label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="icon-centered">
+                                                <div class="icon-container">
+                                                    <img src="images/portfolio/frofist-logo.png"/>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <label for="game-frofist">FroFist</label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="icon-centered">
+                                                <div class="icon-container">
+                                                    <img src="images/portfolio/pueo-adventure-logo.png"/>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <label for="game-pueo">Pueo</label>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </nav>
+                        </div>
+                        <div data-pg-name="Games Main Panel" class="rounding-right-side" style="background-color: #000000;">
+                            <input type="radio" name="game-selection" id="game-power-mage" class="expandable-activator" checked="checked"/>
+                            <div class="blurred-background expandable-window rounding-right-side" style="background-image: url('images/portfolio/power-mage.jpg');">
+                                <div class="flex-footer rounding-right-side">
+                                    <div data-pg-name="Games Main Panel" class="rounding-right-side">
+                                        <input type="radio" name="game-selection" checked="checked" id="game-power-mage" class="expandable-activator"/>
+                                        <div class="blurred-background expandable-window rounding-right-side" style="background-image: url('images/portfolio/power-mage.jpg');">
+                                            <div class="rounding-right-side" style="width: 100%; height: 100%;"></div>
+                                        </div>
+                                    </div>
+                                    <div data-pg-name="Power Mage Side Panel">
+                                        <i class="fab fa-itch-io"></i>
+                                        <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/antti-jussi-o/">Download</a>
+                                        <i class="fab fa-github-alt"></i>
+                                        <a target="_blank" rel="noopener noreferrer" href="https://github.com/AJ-Ora">Source code</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </body>
