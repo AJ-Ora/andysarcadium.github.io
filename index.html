@@ -11,7 +11,7 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand&display=swap">
     </head>
     <body style="background-color: #ffffff; font-family: 'Quicksand', sans-serif; margin: 0px; overflow-y: hidden; height: 100vh; color: #000000;">
-        <div data-pg-name="Flex Container" class="blurred-background flex-small-left-panel" style="background-image: url('images/portfolio/OulankaNationalPark.webp');">
+        <div data-pg-name="Flex Container" class="flex-small-left-panel">
             <div data-pg-name="Side Panel" style="padding-top: 24px;" class="drop-shadow">
                 <div class="icon-centered">
                     <div class="icon-container" style="width: 80%;">
@@ -69,26 +69,31 @@
                     </table>
                 </nav>
             </div>
-            <div data-pg-name="Main Panel">
+            <div data-pg-name="Main Panel" class="blurred-background centered-background" style="background-image: url('images/portfolio/OulankaNationalPark.webp');">
                 <input type="radio" name="window-selection" checked="checked" id="window-about-me" class="expandable-activator"/>
-                <div class="expandable-window">
-                    <div style="background-color: #ffffff; width: 76%; height: 80%; align-self: center; margin-left: 10%; padding-left: 2%; padding-right: 2%; border-radius: 16px;">
-                        <h1>About me</h1>
-                        <p>I am a programmer.</p>
+                <div class="expandable-window" data-pg-name="About Me">
+                    <div class="centered-box drop-shadow flex-small-left-panel rounding-left-side rounding-right-side">
+                        <div data-pg-name="About Me Side Panel" class="rounding-left-side" style="max-width: 40vw;">
+                            <h1>About me</h1>
+                            <p>I am a programmer from Finland, born in 1996. I am a student at <u><a href="https://www.kamk.fi/en" target="_blank">Kajaani University of Applied Sciences</a></u>.</p>
+                            <p>I have lots of versatile skills and experience when it comes to all kinds of aspects of software development: both <b>frontend / user interface</b> development and the more hidden <b>backend</b> development are familiar to me.</p>
+                            <p><b>My focus is on game development</b>, as it offers a challenging (yet rewarding) environment to push the software and the entertainment industries to new heights. I am also a strong believer of the potential of virtual / augmented reality (VR/AR) development.</p>
+                            <p>I am a supporter of open-source software development.</p>
+                        </div>
+                        <div data-pg-name="About Me Image Panel" class="rounding-right-side" style="background-color: #ffffff; background-image: url('images/portfolio/pueo-adventure.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center;">
+</div>
                     </div>
                 </div>
                 <input type="radio" name="window-selection" id="window-skills" class="expandable-activator"/>
-                <div class="expandable-window">
-                    <div style="background-color: #ffffff; width: 80%; height: 80%; align-self: center; margin-left: 10%; border-radius: 16px;" class="flex-small-left-panel">
+                <div class="expandable-window" data-pg-name="Skills">
 </div>
-                </div>
                 <input type="radio" name="window-selection" id="window-games" class="expandable-activator"/>
-                <div class="expandable-window">
-                    <div style="width: 90%; height: 90%; align-self: center; margin-left: 5%; border-radius: 16px;" class="drop-shadow flex-small-left-panel">
+                <div class="expandable-window" data-pg-name="Games">
+                    <div class="centered-box drop-shadow flex-small-left-panel rounding-left-side rounding-right-side">
                         <div data-pg-name="Games Side Panel" class="rounding-left-side">
                             <h1>Games</h1>
                             <p>(Sorted by most recent games first!)</p>
-                            <nav data-pg-name="Games">
+                            <nav data-pg-name="Games List">
                                 <table class="table-with-icons">
                                     <tr>
                                         <td>
@@ -155,15 +160,51 @@
                         </div>
                         <div data-pg-name="Games Main Panel" class="rounding-right-side" style="background-color: #000000;">
                             <input type="radio" name="game-selection" id="game-power-mage" class="expandable-activator" checked="checked"/>
-                            <div class="blurred-background expandable-window rounding-right-side" style="background-image: url('images/portfolio/power-mage.jpg');">
+                            <div class="blurred-background centered-background expandable-window rounding-right-side" style="background-image: url('images/portfolio/power-mage.jpg');" data-pg-name="Power Mage">
                                 <div class="flex-footer rounding-right-side">
-                                    <div data-pg-name="Games Main Panel" class="rounding-right-side">
-                                        <input type="radio" name="game-selection" checked="checked" id="game-power-mage" class="expandable-activator"/>
-                                        <div class="blurred-background expandable-window rounding-right-side" style="background-image: url('images/portfolio/power-mage.jpg');">
-                                            <div class="rounding-right-side" style="width: 100%; height: 100%;"></div>
-                                        </div>
+                                    <div data-pg-name="Power Mage Main Panel" class="rounding-right-side">
+</div>
+                                    <div data-pg-name="Power Mage Footer Panel">
+                                        <i class="fab fa-itch-io"></i>
+                                        <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/antti-jussi-o/">Download</a>
+                                        <i class="fab fa-github-alt"></i>
+                                        <a target="_blank" rel="noopener noreferrer" href="https://github.com/AJ-Ora">Source code</a>
                                     </div>
-                                    <div data-pg-name="Power Mage Side Panel">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <input type="radio" name="window-selection" id="window-projects" class="expandable-activator"/>
+                <div class="expandable-window" data-pg-name="Projects">
+                    <div class="centered-box drop-shadow flex-small-left-panel rounding-left-side rounding-right-side">
+                        <div data-pg-name="Projects Side Panel" class="rounding-left-side">
+                            <h1>Projects</h1>
+                            <p>(Sorted by most recent projects first!)</p>
+                            <nav data-pg-name="Projects List">
+                                <table class="table-with-icons">
+                                    <tr>
+                                        <td>
+                                            <div class="icon-centered">
+                                                <div class="icon-container">
+                                                    <img src="images/portfolio/power-mage-logo.png"/>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <label for="project-unspecified">Unspecified</label>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </nav>
+                        </div>
+                        <div data-pg-name="Games Main Panel" class="blurred-background centered-background rounding-right-side" style="background-color: #000000; background-image: url('images/portfolio/timedilation.jpg');">
+                            <input type="radio" name="project-selection" id="project-unspecified" class="expandable-activator" checked="checked"/>
+                            <div class="expandable-window rounding-right-side" data-pg-name="Unspecified Project">
+                                <div class="flex-footer rounding-right-side">
+                                    <div data-pg-name="UP Main Panel" class="rounding-right-side">
+</div>
+                                    <div data-pg-name="UP Footer Panel">
                                         <i class="fab fa-itch-io"></i>
                                         <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/antti-jussi-o/">Download</a>
                                         <i class="fab fa-github-alt"></i>

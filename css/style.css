@@ -1,3 +1,42 @@
+h1 {
+    font-size: 2vw;
+}
+
+h2 {
+    font-size: 1.8vw;
+}
+
+p {
+    font-size: 1.3vw;
+}
+
+i {
+    font-size: 1.6vw;
+}
+
+label {
+    font-size: 1.6vw;
+    transition: background-color 0.2s ease-in;
+    cursor: pointer;
+}
+
+label:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: background-color 0.2s ease-out;
+}
+
+a {
+    font-size: 1.6vw;
+    transition: background-color 0.2s ease-in;
+    color: #000000;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: background-color 0.2s ease-out;
+}
+
 .icon-container {
     position: relative;
     display: inline-flex;
@@ -38,30 +77,15 @@
     display: none;
 }
 
-label:hover {
-    background-color: rgba(0, 0, 0, 0.2);
-    transition: background-color 0.2s ease-out;
-}
+.centered-background {
+    background-position: center;
 
-label {
-    transition: background-color 0.2s ease-in;
-}
-
-a:hover {
-    background-color: rgba(0, 0, 0, 0.2);
-    transition: background-color 0.2s ease-out;
-}
-
-a {
-    transition: background-color 0.2s ease-in;
-    color: #000000;
-    text-decoration: none;
+    /* background-attachment: fixed; */
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .blurred-background {
-    background-position: center center;
-    background-attachment: fixed;
-    background-size: cover;
 }
 
 .blurred-background > * {
@@ -115,8 +139,7 @@ td:last-child {
 }
 
 .flex-footer > div:last-child > * {
-    font-size: 24px;
-    margin: 4px 8px 4px 0px;
+    margin: 4px 0.8vw 4px 0px;
 }
 
 nav {
@@ -151,4 +174,11 @@ nav {
 
 .drop-shadow {
     box-shadow: 0px 0px 10px 0px #000000;
+}
+
+.centered-box {
+    width: 90%;
+    height: 90%;
+    align-self: center;
+    margin-left: 5%;
 }
