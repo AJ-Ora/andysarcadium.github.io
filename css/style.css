@@ -1,21 +1,21 @@
 h1 {
-    font-size: 2vw;
+    font-size: 42px;
 }
 
 h2 {
-    font-size: 1.8vw;
+    font-size: 32px;
 }
 
 p {
-    font-size: 1.3vw;
+    font-size: 24px;
 }
 
 i {
-    font-size: 1.6vw;
+    font-size: 28px;
 }
 
 label {
-    font-size: 1.6vw;
+    font-size: 28px;
     transition: background-color 0.2s ease-in;
     cursor: pointer;
 }
@@ -26,7 +26,7 @@ label:hover {
 }
 
 a {
-    font-size: 1.6vw;
+    font-size: 28px;
     transition: background-color 0.2s ease-in;
     color: #000000;
     text-decoration: none;
@@ -125,6 +125,13 @@ td:last-child {
 
 .flex-footer > div:first-child {
     flex-grow: 1;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    border-top-right-radius: 16px;
+    overflow: auto;
+    flex-wrap: wrap;
+    align-content: space-around;
 }
 
 .flex-footer > div:last-child {
@@ -139,7 +146,7 @@ td:last-child {
 }
 
 .flex-footer > div:last-child > * {
-    margin: 4px 0.8vw 4px 0px;
+    margin: 4px 12px 4px 0px;
 }
 
 nav {
@@ -181,4 +188,17 @@ nav {
     height: 90%;
     align-self: center;
     margin-left: 5%;
+}
+
+.info-card {
+    flex-basis: 500px;
+    margin: 24px;
+    text-align: center;
+    background-color: #ffffff;
+    padding: 8px;
+}
+
+.info-card > iframe {
+    width: 500px;
+    height: calc(500px / 16 * 9);
 }
