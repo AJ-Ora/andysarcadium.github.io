@@ -197,7 +197,7 @@ nav {
 }
 
 .info-card {
-    flex-basis: 500px;
+    flex-basis: 490px;
     margin: 24px;
     text-align: center;
     background-color: #ffffff;
@@ -205,8 +205,8 @@ nav {
 }
 
 .info-card > iframe {
-    width: 500px;
-    height: calc(500px / 16 * 9);
+    width: 490px;
+    height: calc(490px / 16 * 9);
 }
 
 .skill-card {
